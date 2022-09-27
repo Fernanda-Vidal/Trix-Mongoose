@@ -1,0 +1,1 @@
+// Rotas e middlewares devem ficar aqui
