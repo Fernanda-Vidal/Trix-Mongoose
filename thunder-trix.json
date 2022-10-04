@@ -1,1 +1,75 @@
-{"client":"Thunder Client","collectionName":"Trix","dateExported":"2022-09-27T17:58:54.305Z","version":"1.1","folders":[],"requests":[{"_id":"6d5b10f8-7b18-42ed-8ae2-2a39b85f0f74","colId":"5ded412c-28d9-4ae4-8264-e5e078f9aaa5","containerId":"","name":"Cria uma transferência","url":"http://localhost:3001/transfer","method":"POST","sortNum":5000,"created":"2022-09-27T17:49:52.912Z","modified":"2022-09-27T17:56:24.036Z","headers":[],"params":[],"body":{"type":"json","raw":"{\n  \"payByPerson\": \"Person one\",\n  \"payToPerson\": \"Person two\",\n  \"amount\": 5000,\n  \"key\": \"858.898.670-16\"\n}","form":[]},"tests":[]},{"_id":"e1bff0d7-17cd-4731-bc06-857c3ee83220","colId":"5ded412c-28d9-4ae4-8264-e5e078f9aaa5","containerId":"","name":"Listar todas transferências","url":"http://localhost:3001/transfer","method":"GET","sortNum":7500,"created":"2022-09-27T17:49:52.913Z","modified":"2022-09-27T17:56:50.900Z","headers":[],"params":[],"tests":[]},{"_id":"e8fcbad7-4d9d-47aa-ba72-d949677c4da9","colId":"5ded412c-28d9-4ae4-8264-e5e078f9aaa5","containerId":"","name":"Listar uma transferência por chave","url":"http://localhost:3001/transfer/858.898.670-16","method":"GET","sortNum":8125,"created":"2022-09-27T17:49:52.917Z","modified":"2022-09-27T17:57:22.140Z","headers":[],"params":[],"tests":[]},{"_id":"c2dfadb9-af8c-4466-89ee-5710fcc483fb","colId":"5ded412c-28d9-4ae4-8264-e5e078f9aaa5","containerId":"","name":"Alterar o satus de uma transferência","url":"http://localhost:3001/transfer/INSIRA_O_ID_AQUI","method":"PUT","sortNum":8750,"created":"2022-09-27T17:49:52.915Z","modified":"2022-09-27T17:58:34.003Z","headers":[],"params":[],"body":{"type":"json","raw":"{\n  \"payByPerson\": \"Person one\",\n  \"payToPerson\": \"Person two\",\n  \"amount\": 15000,\n  \"key\": \"858.898.670-16\"\n}","form":[]},"tests":[]}]}
+{
+  "client": "Thunder Client",
+  "collectionName": "Trix",
+  "dateExported": "2022-10-04T17:02:23.434Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "bbebc7d3-983b-4924-80f2-e2b4be32cb4c",
+      "colId": "480e6dca-81b1-467a-9763-a147694adb75",
+      "containerId": "",
+      "name": "Criar uma transferência",
+      "url": "http://localhost:3001/transfer",
+      "method": "POST",
+      "sortNum": 5000,
+      "created": "2022-10-04T13:57:01.652Z",
+      "modified": "2022-10-04T16:59:24.072Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"payByPerson\": \"Abreu\",\n  \"payToPerson\": \"Pompeu\",\n  \"amount\": 40,\n  \"key\": \"187.401.600-33\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "63191684-ba6e-4bed-a57a-6d92ddaf736b",
+      "colId": "480e6dca-81b1-467a-9763-a147694adb75",
+      "containerId": "",
+      "name": "Listar todas transferências",
+      "url": "http://localhost:3001/transfer",
+      "method": "GET",
+      "sortNum": 7500,
+      "created": "2022-10-04T13:57:01.653Z",
+      "modified": "2022-10-04T13:57:01.653Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "ef2e502b-0d6f-44e7-99ce-b5ef9838b563",
+      "colId": "480e6dca-81b1-467a-9763-a147694adb75",
+      "containerId": "",
+      "name": "Listar uma transferência por chave",
+      "url": "http://localhost:3001/transfer/187.401.600-33",
+      "method": "GET",
+      "sortNum": 8125,
+      "created": "2022-10-04T13:57:01.655Z",
+      "modified": "2022-10-04T16:59:45.904Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "64c1bb15-0a3f-46dd-8280-346e418d9fbd",
+      "colId": "480e6dca-81b1-467a-9763-a147694adb75",
+      "containerId": "",
+      "name": "Alterar o status de uma transferência",
+      "url": "http://localhost:3001/transfer/ESCREVA_O_ID_AQUI",
+      "method": "PATCH",
+      "sortNum": 8750,
+      "created": "2022-10-04T13:57:01.656Z",
+      "modified": "2022-10-04T17:01:32.370Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"key\": \"187.401.600-33\"\n}",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}
