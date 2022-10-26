@@ -17,22 +17,10 @@ Essa API é usada como exemplo didático para o bloco de Arquitetura de Software
 
 ## Rodando a aplicação inicial via Docker
 
-- Clone o repositório via `HTTPS`:
+- Após clonar o repositório, vá até a branch desejada:
 
 ```bash
-  git clone https://github.com/tryber/poo-trix.git
-```
-
-- Ou via `SSH`:
-
-```bash
-  git clone git@github.com:tryber/poo-trix.git
-```
-
-- Vá até a branch desejada:
-
-```bash
-  git checkout BRANCH_NAME
+  git checkout #BRANCH_NAME
 ```
 
 - Inicie os contêineres via Docker Compose:
@@ -41,32 +29,20 @@ Essa API é usada como exemplo didático para o bloco de Arquitetura de Software
   docker-compose up -d
 ```
 
-> 👀 Observação: Dois contêineres serão subidos, um para a aplicação Node TypeScript, denominado `trix` e outro para o banco de dados MongoDB, denominado `trix_db`
+> 👀 Observação: Dois contêineres irão subir! Um para a aplicação Node TypeScript, denominado `trix` e outro para o banco de dados MongoDB, denominado `trix_db`
 
-- Para acessar o contêiner do banco de dados, basta seguir os comando abaixo:
-
-  ```bash
-    docker exec -it trix_db bash
-  ```
-
-  - Agora dentro do contêiner, execute o comando abaixo para ter acesso ao terminal do MongoDB:
+- Para acessar o contêiner do banco de dados, basta executar comando abaixo:
 
   ```bash
-    mongo
+    docker exec -it trix_db mongo
   ```
 
-  > 👀 Observação: Aqui você pode executar comandos como: `show dbs`, `use COLLECTION_NAME`, `show collections` e etc...
+  > 👀 Observação: Aqui você pode executar comandos como: `show dbs`, `use #COLLECTION_NAME`, `show collections` e etc...
 
-- Para acessar o contêiner da aplicação, basta seguir os comando abaixo:
+- Para acessar o contêiner da aplicação, basta executar comando abaixo:
 
 ```bash
   docker exec -it trix bash
-```
-
-- Dentro do contêiner instale as dependências:
-
-```bash
-  npm i
 ```
 
 ## Lista de endpoints
@@ -90,11 +66,16 @@ Essa API é usada como exemplo didático para o bloco de Arquitetura de Software
 - Feitos no course:
   - POST `/transfer`;
 - Feitos na aula ao vivo:
-  - PUT `/transfer/:id`;
+  - PATCH `/transfer/:id`;
 - Para serem feitos no exercício do dia:
   - GET `/transfer`;
   - GET `/transfer/:key`;
 
 ### 2° Dia
 
-🚧 Em construção... 🚧
+- Feitos no course:
+  - POST `/key/register`;
+- Feitos na aula ao vivo:
+  - GET `/key/:value`;
+- Para serem feitos no exercício do dia:
+  - GET `/key/owner/:name`;
