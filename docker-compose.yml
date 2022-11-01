@@ -4,6 +4,7 @@ services:
   node:
     image: node:16.14
     container_name: trix
+    user: node
     tty: true
     stdin_open: true
     command: bash

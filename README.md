@@ -1,6 +1,6 @@
 # API OO Trix
 
-Uma API orienta a objetos para gerenciamento de transferências bancárias.
+Uma API orientada a objetos para gerenciamento de transferências bancárias.
 
 Essa API é usada como exemplo didático para o bloco de Arquitetura de Software do Curso de Desenvolvimento Web da Trybe.
 
