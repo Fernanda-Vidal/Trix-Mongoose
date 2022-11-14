@@ -2,6 +2,10 @@ import { expect } from 'chai';
 import sinon from 'sinon';
 import { Model } from 'mongoose';
 
+import IPayment from '../../../src/intefaces/IPayment';
+import Payment from '../../../src/Domain/Payment';
+import TransferService from '../../../src/Services/TransferService';
+
 describe('Deveria criar uma transferência TRIX', function () {
   it('Deveria criar uma transferência TRIX com SUCESSO', async function () {
     // Arrange
