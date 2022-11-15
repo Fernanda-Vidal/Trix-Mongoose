@@ -30,6 +30,12 @@ class TransferService {
     // Retornar os dados com o id
     return this.createPaymentDomain(newPayment);
   }
+
+  public async undoTransfer(id: string, payment: IPayment) {
+    if (!this.isValidKey(payment.key)) throw new Error('Invalid Key!');
+    const paymentODM = new PaymentODM();
+    return paymentODM.update(id, payment);
+  }
 }
 
 export default TransferService;
